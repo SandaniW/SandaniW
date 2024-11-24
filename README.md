@@ -1,2 +1,2 @@
 # ophidian
-Snake eating the contributions
+![GitHub contibution snake](https://github.com/SandaniW/SandaniW/blob/output/snake.svg)
