@@ -1,10 +1,10 @@
-name: Test WorkFlow
+name: Test Workflow
 
 on:
-push:
+  push:
 
-Jobs: 
-Test: 
-runs-on: ubuntu-latest
-steps:
- =
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, World!"
