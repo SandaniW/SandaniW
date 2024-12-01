@@ -2,7 +2,6 @@ name: Generate Snake
 
 on:
   schedule:
-    # Run every 6 hours
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
@@ -11,27 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Generate the snake contribution graph
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
           github_user_name: SandaniW
-          outputs: dist
 
-      # Step 3: Verify Output
-      - name: List files in output directory
-        run: ls -l dist
+      - name: Debug Snake
+        run: cat dist/snake.svg || echo "No output generated"
 
-      # Step 4: Commit and Push changes to `output` branch
       - name: Commit and Push changes
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: "GitHub Actions"
-          author_email: "actions@github.com"
-          message: "Generated snake contribution graph"
+          message: "Generated snake graph"
           push: true
           branch: output
