@@ -6,7 +6,7 @@ I'm Sandani and this github is kinda a mess rn but yeah, it's a work in progress
 
 ### what I do
 - frontend stuff → `html`, `css`, `js`
-- backend-y stuff → `python`, `java`, `c`
+- backend-y stuff → `python`, `java`, `c`,`express`,`spring`
 - mostly just code for fun tbh 😅
 
 ---
